@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" style="font: 90%/1.3 arial">
+<head>
+    <title>Application</title>
+    <style>
+        html{font-family: "Poppins", sans-serif;}
+        h1 {font-size: 50px;}
+        article, aside, figure, footer, header, menu, nav, section {display: block;}
+        label {display:inline-block; width: 180px; text-align: right}
+        fieldset {border-color: red; background-color: lightcoral; border-width: 10px; border-style: solid; width: 720px; }
+        textarea {width: 360px; height: 50px}
+        label:hover {font-size: 40px}
+    </style>
+</head>
+<body>
+<header>
+    <center><h1>Donation Application</h1></center>
+</header>
+<form>
+    <fieldset>
+        <legend>Your General Details</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="name" width="auto">Name:</label>
+                    <input type="text" required id="name" placeholder="Your full name">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <label for="female" width="auto">Gender:</label>
+                <input type="radio" required id="female" name="gender">
+                Male
+                <input type="radio" required id="male" name="gender">
+                Female
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Age:</label>
+                    <input type="number" required id="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Which country:</label>
+                    <select id="country" required>
+                        <option></option>
+                        <option value="cn">Canada</option>
+                        <option value="fr">France</option>
+                        <option value="mx">Mexico</option>
+                        <option value="rs">Russia</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="us">United States</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                    <input type="email" required id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" id="mobile">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="Address" align="top"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <label for="don">Offered Donation: </label>
+                <input type="text" id="don">
+            </tr>
+            <tr>
+                <td>
+                    <label for="email2">Method to contact you:</label>
+                    <input type="checkbox" id="email2">
+                    Email
+                    <input type="checkbox" id="whatsapp">
+                    Mobile
+                    <input type="checkbox" id="app">
+                    Mailing Address
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit">
+</form>
+<script type="text/javascript">
+
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+
+                $('#preview')
+
+                        .attr('src', e.target.result)
+
+                        .width(150)
+
+                        .height(200);
+
+            };
+
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+
+</script>
+</body>
+</html>
