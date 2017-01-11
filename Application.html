@@ -101,51 +101,62 @@
             </tr>
         </table>
     </fieldset>
-      <fieldset>
-      <legend>Medical History</legend>
-      <table>
-        <tr>
-          <label for="yes">Any Medical Complications?</label>
-          <input type="radio" required id="yes" name="comp">
-          Yes
-          <input type="radio" required id="no" name="comp">
-          No
-          <input type="radio" required id="un" name="comp">
-          Unknown
-        </tr>
-          <td>
-          <input type="textarea" id="des" align="top" placeholder="If yes, list any/all complications.">
-          </td>
-      </table>
+    <fieldset>
+        <legend>Medical History</legend>
+        <table>
+            <tr>
+                <label for="yes">Any Medical Complications?</label>
+                <input type="radio" required id="yes" name="comp">
+                Yes
+                <input type="radio" required id="no" name="comp">
+                No
+                <input type="radio" required id="un" name="comp">
+                Unknown
+            </tr>
+            <tr>
+                <textarea id="des" placeholder="If yes, list any/all complications."></textarea>
+            </tr>
+            <tr>
+                <td>
+                    <label for="doc">Primary Doctor's name: </label>
+                    <input type="text" id="doc">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="docemail">Doctor's email: </label>
+                    <input type="text" id="docemail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="docphone">Doctor's office number: </label>
+                    <input type="text" id="docphone">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ins">Medical Insurance: </label>
+                    <input type="text" id="ins">
+                </td>
+            </tr>
+        </table>
     </fieldset>
     <input type="submit">
 </form>
 <script type="text/javascript">
-
     function readURL(input) {
-
         if (input.files && input.files[0]) {
-
             var reader = new FileReader();
-
             reader.onload = function (e) {
-
                 $('#preview')
-
                         .attr('src', e.target.result)
-
                         .width(150)
-
                         .height(200);
-
             };
-
             reader.readAsDataURL(input.files[0]);
-
         }
-
     }
-
 </script>
 </body>
 </html>
