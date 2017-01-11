@@ -27,7 +27,6 @@
                 </td>
             </tr>
             <tr>
-            <tr>
                 <label for="female" width="auto">Gender:</label>
                 <input type="radio" required id="female" name="gender">
                 Male
@@ -106,8 +105,13 @@
       <legend>Medical History</legend>
       <table>
         <tr>
-          <td>
-          </td>
+          <label for="yes">Any Medical Complications?</label>
+          <input type="radio" required id="yes" name="comp">
+          Yes
+          <input type="radio" required id="no" name="comp">
+          No
+          <input type="radio" required id="un" name="comp">
+          Unknown
         </tr>
       </table>
     </fieldset>
