@@ -1,0 +1,24 @@
+html {font-family: "Poppins", sans-serif;}
+h1 {font-size: 80px; color: white; text-align: center;}
+h2 {font-size: 40px; color: ; text-align: left; background-color: ;}
+a {color: red;}
+a:link {
+text-decoration: none ;
+}
+
+a:visited {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+a:active {
+text-decoration: underline;
+}
+textarea {font-size: 20px; text-align: right;align-items: center;}
+fieldset {border-color: red; border-width: 10px; border-style: solid; background-color: red;}
+body{background-image: url(https://slack-imgs.com/?c=1&url=https%3A%2F%2Fwww.floridachildinjurylawyer.com%2Ffiles%2F2014%2F10%2FMedical-Symbol-Care-for-Children-and-Adults.jpg);}
+p{text-align: center; font-size: 15px; font-weight: normal; font-style: normal;}
+img {width: 40px; height: 40px;}
